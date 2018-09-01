@@ -92,7 +92,11 @@ def run():
     try:
         # Server settings
         # Choose port 8080, for port 80, which is normally used for a http server, you need root access
-        server_address = ('192.168.0.21', 8081) #('127.0.0.1', 8081)
+        ip = input('Please enter your LAN IP(v4) address (XXX.XXX.XXX.XXX): ')
+        port = int(input('Please select the port you will listen on (eg, 8081): '))
+
+        # dylan's is '192.168.0.21' and 8081
+        server_address = (ip, port) #('127.0.0.1', 8081)
         httpd = HTTPServer(server_address, MyServerRequestHandler)
         print('running server...')
         httpd.serve_forever()
