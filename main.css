@@ -1,0 +1,67 @@
+@media only screen and (max-width: 600px) {
+    h1 {font-size: 110%;}
+}
+
+body {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    margin-top: 10px;
+    border: 3px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16pt;
+}
+
+h1 {
+    color: blue;
+    margin: 5px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin: 5px;
+}
+
+.alert {
+    background-color: lightpink;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.search {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.search::placeholder {
+    color: lightgrey;
+}
+
+label {
+    display: none;
+}
+
+.submit {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+form {
+    margin: 0px;
+}
