@@ -2,7 +2,7 @@ from .petBattleHelper import Pet, Quest
 
 
 def makeID(questname):
-    return questname.replace(' ', '_').replace("'", '').lower()
+    return questname.replace(' ', '_').replace("'", '').replace("?", '').replace(",", '').replace("!", '').lower()
 
 def addToDB (db, quest):
     db[makeID(quest.name)] = quest
