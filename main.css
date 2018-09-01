@@ -7,17 +7,28 @@ body {
     height: max-content;
     margin: auto;
     margin-top: 10px;
-    border: 3px solid green;
+    border: 5px outset goldenrod;
     padding: 5px;
     border-radius: 10px;
     font-size: 16pt;
+    box-shadow: 5px 8px 10px 0px #555;
 }
 
 h1 {
-    color: blue;
     margin: 5px;
     text-align: center;
-}
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: gold;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 1px 1px 0 darkblue , -1px -1px 0 darkblue , 1px -1px 0 darkblue , -1px 1px 0 darkblue ;
+  }
+  
 
 .center {
     text-align: center;
@@ -32,16 +43,36 @@ h1 {
 }
 
 .search {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: darkgoldenrod;
+    border: 1px solid darkblue;
     color: white;
     border-radius: 5px;
     padding: 5px 5px;
     width: 100%;
-}
 
-.search::placeholder {
-    color: lightgrey;
+    /* Transitions */
+    -webkit-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.search:hover {
+    background-color: gold;
+    color: darkblue;
+
+    /* Transitions */
+    -webkit-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 label {
@@ -49,19 +80,99 @@ label {
 }
 
 .submit {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: darkgoldenrod;
+    border: 1px solid darkblue;
     color: white;
-    padding: 8px 16px;
+    padding: 4px 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-}
 
+    /* Transitions */
+    -webkit-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.submit:hover {
+    background-color: gold;
+    color: darkblue;
+
+    /* Transitions */
+    -webkit-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
 
 form {
     margin: 0px;
+}
+
+
+.pets {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5em;
+}
+.pet td {
+    text-align: center;
+    width: 33.3%;
+    padding: 5px;
+}
+
+.pet td:nth-child(odd) {
+    background-color: #ddf;
+}
+.pet td:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.petName {
+    margin: 2px;
+    font-size: 1.2em;
+}
+.petSkills {
+    font-size: 0.8em;
+    margin: 2px;
+}
+.petBreed {
+    font-size: 0.8em;
+    margin: 2px;
+}
+.strategy, table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.strategy table tr:nth-child(even) {
+    background-color: #ddf;
+}
+.strategy table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.petBreed .lbl, .petSkills .lbl {
+    color: darkblue;
+    text-emphasis: bold;
+}
+
+.step {
+    min-width: 2em;
+    max-width: 5em;
+    border-right: 2px solid white;
+}
+
+.strat {
+    word-wrap: break-word;
 }

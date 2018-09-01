@@ -1,4 +1,4 @@
-from .petBattleHelper import Pet, Quest
+from dataClasses import Pet, Quest
 
 
 def makeID(questname):

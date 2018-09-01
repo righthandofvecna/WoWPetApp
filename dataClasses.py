@@ -1,5 +1,3 @@
-
-
 class Quest (object):
     name = None
     pets = []
@@ -20,3 +18,4 @@ class Pet (object):
         self.name = name
         self.skills = skills
         self.breed = breed
+
