@@ -29,6 +29,18 @@ addToDB(db, Quest("Strange Looking Dogs",
                    ("", "Otherwise, Tongue Lash")]))
 
 
+addToDB(db, Quest("Rogue Azerite",
+                  [Pet("Sprite Darter Hatchling", "2 1 1", "Any"),
+                   Pet("Eternal Strider", "1 2 2", "Any"),
+                   Pet("Scooter the Snail", "2 1 1", "Any")],
+                  [("", "2, 3 (restart on miss), 1, 1, 1"),
+                   ("", "First pet dies"),
+                   ("", "2, 1, 1, 1"),
+                   ("", "When Sprite Darter Hatchling dies, swap to Eternal Strider"),
+                   ("", "1, 2, 3, 1, 3, 1"),
+                   ("", "When Eternal Strider dies, swap to Scooter"),
+                   ("", "2, 3, 1, 1, 2, 1, 3")]))
+
 addToDB(db, Quest("Quest",
                   [Pet("Pet1", "1 1 1", "Any"),
                    Pet("Pet2", "1 1 1", "Any"),
